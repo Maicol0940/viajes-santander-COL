@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viajes Santander</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background-image: url('img/carretera.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    nav {
+      background-color: #008000;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .destinos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .card-body h3 {
+      margin: 0 0 10px 0;
+      color: #008000;
+    }
+    .card-body p {
+      margin: 0 0 15px 0;
+    }
+    .card-body a {
+      display: inline-block;
+      background: #008000;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Viajes Santander</h1>
+    <p>Viajes cómodos, seguros y amables desde Capitanejo y Málaga a destinos por toda Colombia</p>
+  </header>
+
+  <nav>
+    <a href="#destinos">Destinos</a>
+    <a href="https://wa.me/573134571264" target="_blank">Reservar</a>
+  </nav>
+
+  <section id="destinos" class="destinos">
+    <div class="card">
+      <img src="img/bucaramanga2.png" alt="Bucaramanga">
+      <div class="card-body">
+        <h3>Capitanejo → Bucaramanga</h3>
+        <p>Precio: $90.000 COP por pasajero</p>
+        <p>Cupo de 4 personas. Hora acordada una vez se complete.</p>
+        <a href="https://wa.me/573134571264">Reservar ahora</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/bucaramanga.png" alt="Bucaramanga">
+      <div class="card-body">
+        <h3>Málaga → Bucaramanga</h3>
+        <p>Precio: $75.000 COP por pasajero</p>
+        <p>Cupo de 4 personas. Hora acordada una vez se complete.</p>
+        <a href="https://wa.me/573134571264">Reservar ahora</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/bogota2.png" alt="Bogotá">
+      <div class="card-body">
+        <h3>Capitanejo → Bogotá</h3>
+        <p>Precio: $100.000 COP por pasajero</p>
+        <p>Cupo de 4 personas. Hora acordada una vez se complete.</p>
+        <a href="https://wa.me/573134571264">Reservar ahora</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/bogota.png" alt="Bogotá">
+      <div class="card-body">
+        <h3>Málaga → Bogotá</h3>
+        <p>Precio: $110.000 COP por pasajero</p>
+        <p>Cupo de 4 personas. Hora acordada una vez se complete.</p>
+        <a href="https://wa.me/573134571264">Reservar ahora</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/valledupar.png" alt="Valledupar">
+      <div class="card-body">
+        <h3>Bucaramanga → Valledupar</h3>
+        <p>Precio: $150.000 COP por pasajero</p>
+        <p>Cupo de 4 personas. Hora acordada una vez se complete.</p>
+        <a href="https://wa.me/573134571264">Reservar ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <a class="whatsapp" href="https://wa.me/573134571264" target="_blank">📞 WhatsApp</a>
+
+  <footer>
+    <p>Viajes Santander · Sólo dentro de Colombia · Contacto y pagos por Nequi: 3134571264</p>
+  </footer>
+</body>
+</html>
